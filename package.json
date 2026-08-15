@@ -1,0 +1,59 @@
+{
+  "name": "customizable",
+  "version": "1.0.0",
+  "description": "Pure CSS page-styling system for the FSCSS ecosystem — navigation, hero sections, feature grids, CTA banners, multi-column footers, 404 pages, and long-form article typography, all built to be selectively imported and restyled per page.",
+  "extension": "fscss",
+  "fscss_version": "^1.1.24",
+  "blocked_methods": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fscss-ttr/customizable.fscss"
+  },
+  "bugs": {
+    "url": "https://github.com/fscss-ttr/customizable.fscss/issues"
+  },
+  "file": {
+    "usage": {
+      "directive": "page-*",
+      "helpers": [
+        "page-root",
+        "page-base",
+        "page-nav",
+        "page-badge",
+        "page-hero",
+        "page-hero-image",
+        "page-img",
+        "page-figure",
+        "page-btn",
+        "page-btn-primary",
+        "page-btn-ghost",
+        "page-features",
+        "page-feature-card",
+        "page-cta-banner",
+        "page-footer",
+        "page-footer-bottom",
+        "page-404",
+        "page-prose"
+      ]
+    },
+    "modules": [
+      "./customizable.fscss"
+    ],
+    "remote": "./customizable.fscss"
+  },
+  "author": {
+    "name": "fscss-ttr"
+  },
+  "keywords": [
+    "fscss",
+    "css",
+    "landing-page",
+    "page-template",
+    "css-only",
+    "responsive",
+    "typography",
+    "404-page",
+    "ui-kit"
+  ],
+  "license": "MIT"
+}
