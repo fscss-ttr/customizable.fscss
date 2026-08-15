@@ -318,10 +318,17 @@ Pages that need a different breakpoint or additional responsive behavior can add
 ## 8. Full Example
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" defer></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>customizable.fscss — landing demo</title>
+<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" async></script>
 
 <style>
-@import((*) from customizable)
+@import((page-root, page-base, page-nav, page-badge, page-hero, page-hero-image, page-img, page-btn, page-btn-primary, page-btn-ghost, page-features, page-feature-card, page-cta-banner, page-footer, page-footer-bottom) from customizable)
 
 @page-root()
 @page-base(body)
@@ -329,48 +336,64 @@ Pages that need a different breakpoint or additional responsive behavior can add
 @page-badge(.page-badge)
 @page-hero(.page-hero)
 @page-hero-image(.page-hero-image)
+@page-img(.page-img)
 @page-btn(.page-btn)
 @page-btn-primary(.page-btn-primary)
 @page-btn-ghost(.page-btn-ghost)
 @page-features(.page-features)
 @page-feature-card(.page-feature-card)
-@page-img(.page-img)
 @page-cta-banner(.page-cta-banner)
 @page-footer(.page-footer)
 @page-footer-bottom(.page-footer-bottom)
+
 </style>
+</head>
+<body>
 
 <nav class="page-nav">
-  <span class="page-logo">Brand</span>
+  <span class="page-logo"><img src="https://fscss.devtem.org/assets/images/fscss.png">Example</span>
   <div class="page-nav-links">
     <a href="#">Features</a>
     <a href="#">Pricing</a>
+    <a href="#">Docs</a>
   </div>
 </nav>
 
 <section class="page-hero">
-  <span class="page-badge">Now live — version 1.0</span>
+  <span class="page-badge">Now live - v1.0</span>
   <h1>A modern landing page, built entirely in CSS</h1>
-  <p>One supporting sentence describing the product.</p>
+  <p>Swap the copy, drop in your own images, and this page adapts down to any screen size — no framework required.</p>
   <div class="page-hero-actions">
-    <a href="#" class="page-btn page-btn-primary">Get started</a>
-    <a href="#" class="page-btn page-btn-ghost">Learn more</a>
+    <a href="#" class="page-btn page-btn-primary">Get started →</a>
+    <a href="#" class="page-btn page-btn-ghost">See how it works</a>
   </div>
-  <img class="page-hero-image" src="screenshot.png" alt="Product screenshot">
+
+  <img src="https://loremflickr.com/800/600/nature" class="page-hero-image" style="aspect-ratio: 16/9;">
 </section>
 
 <div class="page-features">
   <div class="page-feature-card">
-    <img class="page-img" src="feature-1.png" alt="">
-    <h3>Feature name</h3>
-    <p>Short description.</p>
+  <img src="https://loremflickr.com/800/600/sea" class="page-img">
+  
+    <h3>Feature one</h3>
+    <p>Short description of what this feature does and why it matters to the user.</p>
+  </div>
+  <div class="page-feature-card">
+<img src="https://loremflickr.com/800/600/travel" class="page-img">
+    <h3>Feature two</h3>
+    <p>Short description of what this feature does and why it matters to the user.</p>
+  </div>
+  <div class="page-feature-card">
+<img src="https://loremflickr.com/800/600/programming" class="page-img">
+    <h3>Feature three</h3>
+    <p>Short description of what this feature does and why it matters to the user.</p>
   </div>
 </div>
 
 <section class="page-cta-banner">
-  <h2>Ready to get started?</h2>
-  <p>One closing sentence.</p>
-  <a href="#" class="page-btn page-btn-primary">Start now</a>
+  <h2>Ready to try it yourself?</h2>
+  <p>No account needed to preview — see the whole thing in your browser.</p>
+  <a href="#" class="page-btn page-btn-primary">Start now →</a>
 </section>
 
 <footer class="page-footer">
@@ -378,12 +401,40 @@ Pages that need a different breakpoint or additional responsive behavior can add
     <div class="page-footer-col">
       <h4>Product</h4>
       <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Changelog</a>
+    </div>
+    <div class="page-footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="page-footer-col">
+      <h4>Resources</h4>
+      <a href="#">Docs</a>
+      <a href="#">Support</a>
+      <a href="#">Status</a>
+    </div>
+    <div class="page-footer-col">
+      <h4>Legal</h4>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
     </div>
   </div>
 </footer>
 <div class="page-footer-bottom">
-  <span>Copyright notice</span>
+  <span>© 2026 Example Inc.</span>
+  <div>
+    <a href="#">Twitter</a> &nbsp;·&nbsp;
+    <a href="#">GitHub</a>
+  </div>
 </div>
+
+</body>
+</html>
+
+
 ```
 
 ## 9. Design Token Reference
