@@ -4,7 +4,7 @@ Pure CSS page-styling system for the FSCSS ecosystem. It provides the components
 
 License: MIT
 Repository: https://github.com/fscss-ttr/customizable.fscss
-Requires FSCSS v1.1.24 or later.
+Requires FSCSS v1.1.24+.
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Every visual property that a project is likely to want to change — color, radi
 CDN, runtime compilation:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/fscss@1.2.6/runtime.min.js" defer></script>
 <style>
   @import((*) from customizable)
 </style>
@@ -325,7 +325,7 @@ Pages that need a different breakpoint or additional responsive behavior can add
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>customizable.fscss — landing demo</title>
-<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/fscss@1.2.6/runtime.min.js" async></script>
 
 <style>
 @import((page-root, page-base, page-nav, page-badge, page-hero, page-hero-image, page-img, page-btn, page-btn-primary, page-btn-ghost, page-features, page-feature-card, page-cta-banner, page-footer, page-footer-bottom) from customizable)
