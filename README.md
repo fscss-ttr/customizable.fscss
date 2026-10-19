@@ -461,3 +461,11 @@ The module does not include a hamburger menu or mobile navigation drawer. On nar
 Image mixins style the presentation of an image element but do not handle loading, optimization, or lazy loading. These remain the responsibility of the page itself or the platform serving the image.
 
 Components read from custom properties set by `page-root`. If `page-root` is not called, or is called after a component that depends on its tokens, the affected properties fall back to the browser's default handling of an undefined custom property, which is typically an initial or inherited value rather than the intended design token. `page-root` should be called first, before any other mixin in the module.
+
+## FSCSS [IDE](https://fscss.devtem.org/ide) COMMAND
+
+```
+libon customizable
+```
+
+---
