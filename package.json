@@ -1,9 +1,12 @@
 {
   "name": "customizable",
   "version": "1.0.0",
-  "description": "Pure CSS page-styling system for the FSCSS ecosystem — navigation, hero sections, feature grids, CTA banners, multi-column footers, 404 pages, and long-form article typography, all built to be selectively imported and restyled per page.",
+  "description": "Pure CSS page-styling system for the FSCSS ecosystem — navigation, hero, features, CTA, footer, 404, and prose typography.",
   "extension": "fscss",
   "fscss_version": ">=1.1.24",
+  "engines": {
+    "fscss": ">=1.1.24"
+  },
   "blocked_methods": [],
   "repository": {
     "type": "git",
@@ -12,37 +15,41 @@
   "bugs": {
     "url": "https://github.com/fscss-ttr/customizable.fscss/issues"
   },
+  "homepage": "https://github.com/fscss-ttr/customizable.fscss#readme",
   "file": {
     "usage": {
       "directive": "page-*",
       "helpers": [
-        "page-root",
-        "page-base",
-        "page-nav",
-        "page-badge",
-        "page-hero",
-        "page-hero-image",
-        "page-img",
-        "page-figure",
-        "page-btn",
-        "page-btn-primary",
-        "page-btn-ghost",
-        "page-features",
-        "page-feature-card",
-        "page-cta-banner",
-        "page-footer",
-        "page-footer-bottom",
-        "page-404",
-        "page-prose"
+        "page-root(root:root)",
+        "page-base(body:body)",
+        "page-nav(nav:.page-nav)",
+        "page-badge(badge:.page-badge)",
+        "page-hero(hero:.page-hero)",
+        "page-hero-image(img:.page-hero-image)",
+        "page-img(img:.page-img)",
+        "page-figure(figure:.page-figure)",
+        "page-btn(btn:.page-btn)",
+        "page-btn-primary(btn:.page-btn-primary)",
+        "page-btn-ghost(btn:.page-btn-ghost)",
+        "page-features(grid:.page-features)",
+        "page-feature-card(card:.page-feature-card)",
+        "page-cta-banner(banner:.page-cta-banner)",
+        "page-footer(footer:.page-footer)",
+        "page-footer-bottom(bottom:.page-footer-bottom)",
+        "page-404(wrap:.page-404)",
+        "page-prose(prose:.page-prose)"
       ]
     },
-    "modules": [
-      "./customizable.fscss"
-    ],
+    "modules": ["./customizable.fscss"],
     "remote": "./customizable.fscss"
   },
+  "xfcmd": {
+    "enable": "./xfcmds/enable.xfcmd",
+    "disable": "./xfcmds/disable.xfcmd"
+  },
   "author": {
-    "name": "fscss-ttr"
+    "name": "fscss-ttr",
+    "url": "https://github.com/fscss-ttr"
   },
   "keywords": [
     "fscss",
