@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Pure CSS page-styling system for the FSCSS ecosystem — navigation, hero sections, feature grids, CTA banners, multi-column footers, 404 pages, and long-form article typography, all built to be selectively imported and restyled per page.",
   "extension": "fscss",
-  "fscss_version": "^1.1.24",
+  "fscss_version": ">=1.1.24",
   "blocked_methods": [],
   "repository": {
     "type": "git",
