@@ -1,0 +1,4 @@
+# xfcmds/disable.xfcmd
+# liboff customizable
+say "Disabled {name}. Helper snippets were removed."
+say "Demo folder customizable-demo/ was kept. Delete it if you do not need it."
